@@ -1,0 +1,58 @@
+.match-card {
+  background-color: #0f172a;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .match-card {
+    width: calc(50% - 8px);
+  }
+}
+
+/* Desktop: 3 columns */
+@media screen and (min-width: 992px) {
+  .match-card {
+    width: calc(33.33% - 11px);
+  }
+}
+
+/* Large Desktop: 4 columns */
+@media screen and (min-width: 1200px) {
+  .match-card {
+    width: calc(25% - 12px);
+  }
+}
+.match-logo {
+  width: 60px;
+}
+
+.match-team {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.match-result {
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.match-status {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.status-won {
+  color: #18ed66;
+}
+
+.status-lost {
+  color: #e31a1a;
+}
