@@ -1,57 +1,72 @@
-.home-container {
+.home-route-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
   background-size: cover;
-  padding: 20px;
-  font-family: 'Bree Serif';
   min-height: 100vh;
 }
+
 @media screen and (min-width: 768px) {
-  .home-container {
+  .home-route-container {
     background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png');
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
   }
 }
-.header {
+
+.teams-list-container {
+  width: 90%;
+  max-width: 600px;
+}
+
+@media screen and (min-width: 768px) {
+  .teams-list-container {
+    width: 90%;
+    max-width: 1110px;
+  }
+}
+
+.ipl-dashboard-heading-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .ipl-logo {
-  width: 40px;
-  margin-right: 12px;
+  width: 25px;
+  height: 40px;
 }
-.error-text {
-  text-align: center;
-  color: #ffffff;
-  font-size: 28px;
-  font-weight: bold;
-  margin: 4px;
-}
-@media screen and (min-width: 576px) {
-  .error-text {
-    font-size: 48px;
+
+@media screen and (min-width: 768px) {
+  .ipl-logo {
+    width: 60px;
+    height: 96px;
   }
 }
-.heading {
+
+.ipl-dashboard-heading {
   color: #ffffff;
-  font-size: 32px;
+  font-family: 'Bree Serif';
+  font-size: 36px;
+  margin-left: 12px;
 }
-.teams-grid {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 32px;
+
+@media screen and (min-width: 768px) {
+  .ipl-dashboard-heading {
+    font-size: 72px;
+    margin-left: 16px;
+  }
+}
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.teams-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-}
-.loader-container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #0f172a;
+  padding-left: 0px;
 }
