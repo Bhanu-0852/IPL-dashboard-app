@@ -1,96 +1,68 @@
-.home-container {
-  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
-  background-size: cover;
-  padding: 20px;
-  font-family: 'Bree Serif';
-  min-height: 100vh;
-}
-@media screen and (min-width: 768px) {
-  .home-container {
-    background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png');
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-  }
-}
-.error-text {
-  text-align: center;
-  color: #ffffff;
-  font-size: 28px;
-  font-weight: bold;
-  margin: 4px;
-}
-@media screen and (min-width: 576px) {
-  .error-text {
-    font-size: 48px;
-  }
-}
 .team-matches-container {
+  display: flex;
+  justify-content: center;
   min-height: 100vh;
-  padding: 24px;
-  font-family: 'Bree Serif';
 }
-/* Gradient Backgrounds */
 
 .rcb {
-  background: linear-gradient(135deg, #a4261d, #1e293b);
+  background: linear-gradient(to top, #1e293b, #a4261d);
 }
 
 .kkr {
-  background: linear-gradient(135deg, #5755a7, #1e293b);
-}
-
-.mi {
-  background: linear-gradient(135deg, #13418b, #1e293b);
-}
-
-.csk {
-  background: linear-gradient(135deg, #f7db00, #1e293b);
-}
-
-.rr {
-  background: linear-gradient(135deg, #da237b, #1e293b);
-}
-
-.sh {
-  background: linear-gradient(135deg, #f26d22, #1e293b);
-}
-
-.dc {
-  background: linear-gradient(135deg, #4f5db0, #1e293b);
+  background: linear-gradient(to top, #1e293b, #5755a7);
 }
 
 .kxp {
-  background: linear-gradient(135deg, #d91c1f, #1e293b);
+  background: linear-gradient(to top, #1e293b, #d91c1f);
+}
+
+.csk {
+  background: linear-gradient(to top, #1e293b, #f7db00);
+}
+
+.rr {
+  background: linear-gradient(to top, #1e293b, #da237b);
+}
+
+.mi {
+  background: linear-gradient(to top, #1e293b, #13418b);
+}
+
+.srh {
+  background: linear-gradient(to top, #1e293b, #f26d22);
+}
+
+.dc {
+  background: linear-gradient(to top, #1e293b, #4f5db0);
+}
+
+.responsive-container {
+  width: 90%;
+  max-width: 500px;
+  margin-top: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .responsive-container {
+    margin-top: 96px;
+    max-width: 1110px;
+  }
 }
 
 .team-banner {
   width: 100%;
-  border-radius: 8px;
 }
 
-/* Heading */
-
-.latest-heading {
-  color: #ffffff;
-  font-size: 22px;
-  margin-top: 24px;
-  margin-bottom: 16px;
-}
-.recent-grid {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 16px;
+.recent-matches-list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 16px;
+  padding-left: 0;
+  margin-top: 24px;
 }
-.loader-container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #0f172a;
+
+@media screen and (min-width: 768px) {
+  .recent-matches-list {
+    margin-top: 32px;
+  }
 }
